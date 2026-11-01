@@ -1,0 +1,287 @@
+@prefix ta: <https://example.org/travel-assistant#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Working ontology for Assignment 1, serialized as Turtle despite the .owl extension.
+# Five agreed OWL construct kinds enrich the preserved RDF(S) baseline.
+# There are no domain individuals or imported domain ontologies.
+
+<https://example.org/travel-assistant> a owl:Ontology ;
+    rdfs:label "Travel Assistant Ontology"@en ;
+    rdfs:comment "An ontology for planning leisure city trips through destinations, attractions, activities, accommodation, restaurants, transport options, and traveler preferences. The model includes disjointness, inverse properties, existential restrictions, qualified exact cardinality, and a functional datatype property. Bookings, payments, visa advice, live availability, and real-time prices are outside its initial scope."@en ;
+    owl:versionInfo "0.2 - Agreed OWL enrichment" .
+
+#################################################################
+# Classes
+#################################################################
+
+ta:Place a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Place"@en ;
+    rdfs:comment "A geographic area or physical location."@en .
+
+ta:City a owl:Class ;
+    rdfs:subClassOf ta:Place ;
+    rdfs:label "City"@en ;
+    rdfs:comment "A city that a traveler could visit."@en .
+
+ta:Country a owl:Class ;
+    rdfs:subClassOf ta:Place ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A country containing travel destinations."@en .
+
+ta:Attraction a owl:Class ;
+    rdfs:subClassOf ta:Place,
+        [ a owl:Restriction ;
+            owl:onProperty ta:locatedInCity ;
+            owl:someValuesFrom ta:City ;
+            rdfs:label "Attraction city requirement"@en ;
+            rdfs:comment "Every attraction is located in at least one city within the city-trip scope."@en
+        ] ;
+    rdfs:label "Attraction"@en ;
+    rdfs:comment "A place travelers may visit for interest or enjoyment."@en .
+
+ta:Museum a owl:Class ;
+    rdfs:subClassOf ta:Attraction ;
+    rdfs:label "Museum"@en ;
+    rdfs:comment "An attraction displaying collections or exhibitions."@en .
+
+ta:Landmark a owl:Class ;
+    rdfs:subClassOf ta:Attraction ;
+    rdfs:label "Landmark"@en ;
+    rdfs:comment "A notable site or structure considered as an attraction."@en .
+
+ta:Park a owl:Class ;
+    rdfs:subClassOf ta:Attraction ;
+    rdfs:label "Park"@en ;
+    rdfs:comment "A public outdoor area for recreation, considered as an attraction."@en .
+
+ta:Accommodation a owl:Class ;
+    rdfs:subClassOf ta:Place,
+        [ a owl:Restriction ;
+            owl:onProperty ta:locatedInCity ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ta:City ;
+            rdfs:label "Accommodation city requirement"@en ;
+            rdfs:comment "Every accommodation is located in exactly one city as a simplifying assumption for this model."@en
+        ] ;
+    rdfs:label "Accommodation"@en ;
+    rdfs:comment "A place providing overnight stays."@en .
+
+ta:Hotel a owl:Class ;
+    rdfs:subClassOf ta:Accommodation ;
+    rdfs:label "Hotel"@en ;
+    rdfs:comment "A hotel providing accommodation for travelers."@en .
+
+ta:Hostel a owl:Class ;
+    rdfs:subClassOf ta:Accommodation ;
+    rdfs:label "Hostel"@en ;
+    rdfs:comment "A hostel providing accommodation for travelers."@en .
+
+ta:Restaurant a owl:Class ;
+    rdfs:subClassOf ta:Place ;
+    rdfs:label "Restaurant"@en ;
+    rdfs:comment "A place serving meals."@en .
+
+ta:Traveler a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:disjointWith ta:Place ;
+    rdfs:label "Traveler"@en ;
+    rdfs:comment "A person whose travel preferences are represented in the application."@en .
+
+ta:Interest a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Interest"@en ;
+    rdfs:comment "A topic that a traveler enjoys or that an attraction or activity relates to."@en .
+
+ta:Activity a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Activity"@en ;
+    rdfs:comment "Something travelers can do during a trip, such as a guided tour."@en .
+
+ta:Cuisine a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Cuisine"@en ;
+    rdfs:comment "A culinary tradition or style."@en .
+
+ta:BudgetCategory a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Budget category"@en ;
+    rdfs:comment "A broad cost category used to describe accommodation and traveler preferences. The category assignment criteria are not yet defined in this baseline."@en .
+
+ta:TransportOption a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Transport option"@en ;
+    rdfs:comment "A transport service or connection providing access to a place. Detailed access criteria remain to be specified."@en .
+
+ta:TransportMode a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "Transport mode"@en ;
+    rdfs:comment "A type of transport, such as bus or rail."@en .
+
+#################################################################
+# Object properties
+#################################################################
+
+ta:locatedInCity a owl:ObjectProperty ;
+    rdfs:domain ta:Place ;
+    rdfs:range ta:City ;
+    owl:inverseOf ta:containsPlace ;
+    rdfs:label "located in city"@en ;
+    rdfs:comment "Relates a place to a city in which it is located."@en .
+
+ta:containsPlace a owl:ObjectProperty ;
+    rdfs:domain ta:City ;
+    rdfs:range ta:Place ;
+    rdfs:label "contains place"@en ;
+    rdfs:comment "Relates a city to a place located in it. This property is the inverse of locatedInCity and does not assert containment for places lacking a city-location relationship."@en .
+
+ta:locatedInCountry a owl:ObjectProperty ;
+    rdfs:domain ta:City ;
+    rdfs:range ta:Country ;
+    rdfs:label "located in country"@en ;
+    rdfs:comment "Relates a city to a country in which it is located."@en .
+
+ta:hasInterest a owl:ObjectProperty ;
+    rdfs:domain ta:Traveler ;
+    rdfs:range ta:Interest ;
+    rdfs:label "has interest"@en ;
+    rdfs:comment "Relates a traveler to an interest they have."@en .
+
+ta:hasAttractionTheme a owl:ObjectProperty ;
+    rdfs:domain ta:Attraction ;
+    rdfs:range ta:Interest ;
+    rdfs:label "has attraction theme"@en ;
+    rdfs:comment "Relates an attraction to an interest that describes its theme."@en .
+
+ta:hasActivityTheme a owl:ObjectProperty ;
+    rdfs:domain ta:Activity ;
+    rdfs:range ta:Interest ;
+    rdfs:label "has activity theme"@en ;
+    rdfs:comment "Relates an activity to an interest that describes its theme."@en .
+
+ta:activityInCity a owl:ObjectProperty ;
+    rdfs:domain ta:Activity ;
+    rdfs:range ta:City ;
+    rdfs:label "activity in city"@en ;
+    rdfs:comment "Relates an activity to a city in which it takes place. This relationship does not assert live booking availability."@en .
+
+ta:hasBudgetCategory a owl:ObjectProperty ;
+    rdfs:domain ta:Accommodation ;
+    rdfs:range ta:BudgetCategory ;
+    rdfs:label "has budget category"@en ;
+    rdfs:comment "Relates accommodation to a broad cost category. It does not represent a current room price or live availability."@en .
+
+ta:prefersBudgetCategory a owl:ObjectProperty ;
+    rdfs:domain ta:Traveler ;
+    rdfs:range ta:BudgetCategory ;
+    rdfs:label "prefers budget category"@en ;
+    rdfs:comment "Relates a traveler to a cost category they prefer for accommodation."@en .
+
+ta:servesCuisine a owl:ObjectProperty ;
+    rdfs:domain ta:Restaurant ;
+    rdfs:range ta:Cuisine ;
+    rdfs:label "serves cuisine"@en ;
+    rdfs:comment "Relates a restaurant to a cuisine it serves."@en .
+
+ta:prefersCuisine a owl:ObjectProperty ;
+    rdfs:domain ta:Traveler ;
+    rdfs:range ta:Cuisine ;
+    rdfs:label "prefers cuisine"@en ;
+    rdfs:comment "Relates a traveler to a cuisine they prefer."@en .
+
+ta:providesAccessTo a owl:ObjectProperty ;
+    rdfs:domain ta:TransportOption ;
+    rdfs:range ta:Attraction ;
+    rdfs:label "provides access to"@en ;
+    rdfs:comment "Relates a transport option to an attraction it provides access to. This is an explicitly recorded connection, not a computed route or live service guarantee; detailed access criteria remain to be specified."@en .
+
+ta:usesTransportMode a owl:ObjectProperty ;
+    rdfs:domain ta:TransportOption ;
+    rdfs:range ta:TransportMode ;
+    rdfs:label "uses transport mode"@en ;
+    rdfs:comment "Relates a transport option to a mode of transport it uses."@en .
+
+#################################################################
+# Datatype properties
+#################################################################
+
+ta:hasPlaceName a owl:DatatypeProperty ;
+    rdfs:domain ta:Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place name"@en ;
+    rdfs:comment "Records the name of a place as a string."@en .
+
+ta:hasStreetAddress a owl:DatatypeProperty ;
+    rdfs:domain ta:Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "street address"@en ;
+    rdfs:comment "Records a street address for a place, where applicable."@en .
+
+ta:hasWebsite a owl:DatatypeProperty ;
+    rdfs:domain ta:Place ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "website"@en ;
+    rdfs:comment "Records a place's website address as a URI-valued literal."@en .
+
+ta:hasCountryCode a owl:DatatypeProperty ;
+    rdfs:domain ta:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "country code"@en ;
+    rdfs:comment "Records a country code as a string. A specific coding scheme is not enforced in this baseline."@en .
+
+ta:hasActivityName a owl:DatatypeProperty ;
+    rdfs:domain ta:Activity ;
+    rdfs:range xsd:string ;
+    rdfs:label "activity name"@en ;
+    rdfs:comment "Records the name of an activity as a string."@en .
+
+ta:hasDurationMinutes a owl:DatatypeProperty ;
+    rdfs:domain ta:Activity ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:label "duration in minutes"@en ;
+    rdfs:comment "Records the duration of an activity in minutes as a non-negative integer."@en .
+
+ta:hasTransportName a owl:DatatypeProperty ;
+    rdfs:domain ta:TransportOption ;
+    rdfs:range xsd:string ;
+    rdfs:label "transport name"@en ;
+    rdfs:comment "Records the name of a transport service or connection as a string."@en .
+
+ta:hasRouteIdentifier a owl:DatatypeProperty ;
+    rdfs:domain ta:TransportOption ;
+    rdfs:range xsd:string ;
+    rdfs:label "route identifier"@en ;
+    rdfs:comment "Records an identifier for the route of a transport option, where applicable."@en .
+
+ta:hasCurrencyCode a owl:DatatypeProperty ;
+    rdfs:domain ta:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "currency code"@en ;
+    rdfs:comment "Records a currency code used in a country. It does not specify exchange rates, and the baseline does not require a country to have exactly one currency."@en .
+
+ta:hasTimeZone a owl:DatatypeProperty ;
+    rdfs:domain ta:City ;
+    rdfs:range xsd:string ;
+    rdfs:label "time zone"@en ;
+    rdfs:comment "Records a time-zone identifier for a city, such as Europe/Vienna. The identifier is a string rather than a clock time or a fixed UTC offset."@en .
+
+ta:hasVegetarianOptions a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain ta:Restaurant ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "has vegetarian options"@en ;
+    rdfs:comment "Records a single yes/no value indicating whether a restaurant offers vegetarian dishes. Functionality permits at most one boolean value, so asserting both true and false is contradictory. An absent value remains unknown rather than false; a recorded value is not mandatory."@en .
+
+ta:hasCheckInTime a owl:DatatypeProperty ;
+    rdfs:domain ta:Accommodation ;
+    rdfs:range xsd:time ;
+    rdfs:label "check-in time"@en ;
+    rdfs:comment "Records the accommodation's standard local check-in time. It is reference information rather than a reservation-specific arrival time; local times may be recorded without a UTC offset."@en .
+
+ta:hasCheckOutTime a owl:DatatypeProperty ;
+    rdfs:domain ta:Accommodation ;
+    rdfs:range xsd:time ;
+    rdfs:label "check-out time"@en ;
+    rdfs:comment "Records the accommodation's standard local check-out time. It is reference information rather than a reservation-specific departure time; local times may be recorded without a UTC offset."@en .

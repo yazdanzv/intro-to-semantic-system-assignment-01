@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="514" height="208" preserveAspectRatio="xMinYMin meet" viewBox="0 0 514 208" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="514" height="208"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-208)" style="clip-path: url(#clip)">
+		<g transform="">
+			<path d="M 379,125 L 398,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,125 L 398,149 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,149 L 430,149 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,69 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,69 L 103,69 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 212,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 231,161 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,161 L 267,161 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,191 L 103,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,21 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,21 L 103,21 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,45 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,45 L 103,45 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 212,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 231,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,125 L 267,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,165 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,165 L 103,165 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,117 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,117 L 103,117 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,93 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,93 L 103,93 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 379,65 L 398,65 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,65 L 398,75 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,75 L 430,75 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 379,65 L 398,65 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,65 L 398,49 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,49 L 430,49 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 212,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 267,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 68,103 L 87,103 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,103 L 87,141 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 87,141 L 103,141 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 212,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 231,23 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,23 L 267,23 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 379,125 L 398,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,125 L 398,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,125 L 430,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 212,191 L 231,191 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,191 L 231,65 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 231,65 L 267,65 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 379,125 L 398,125 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,125 L 398,101 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 398,101 L 430,101 Z" style="stroke: rgb(45%,51%,55%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<rect x="2" y="93.5" width="66" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="15.740966796874996" y="100" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,200) scale(1,-1)">owl:Thing</text>
+			<rect x="103" y="181.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="146.243408203125" y="188" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,376) scale(1,-1)">Place</text>
+			<rect x="103" y="155.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="140.996337890625" y="162" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,324) scale(1,-1)">Traveler</text>
+			<rect x="103" y="131.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="142.49267578125" y="138" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,276) scale(1,-1)">Interest</text>
+			<rect x="103" y="107.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="143.24853515625" y="114" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,228) scale(1,-1)">Activity</text>
+			<rect x="103" y="83.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="142.49267578125" y="90" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,180) scale(1,-1)">Cuisine</text>
+			<rect x="103" y="59.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="124.978271484375" y="66" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,132) scale(1,-1)">BudgetCategory</text>
+			<rect x="103" y="35.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="124.98486328125" y="42" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,84) scale(1,-1)">TransportOption</text>
+			<rect x="103" y="11.5" width="109" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="126.986572265625" y="18" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,36) scale(1,-1)">TransportMode</text>
+			<rect x="267" y="181.5" width="112" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="315.250244140625" y="188" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,376) scale(1,-1)">City</text>
+			<rect x="267" y="151.5" width="112" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="307.243408203125" y="158" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,316) scale(1,-1)">Country</text>
+			<rect x="267" y="115.5" width="112" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="303.991455078125" y="122" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,244) scale(1,-1)">Attraction</text>
+			<rect x="267" y="55.5" width="112" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="290.7353515625" y="62" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,124) scale(1,-1)">Accommodation</text>
+			<rect x="267" y="13.5" width="112" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="300.98779296875" y="20" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,40) scale(1,-1)">Restaurant</text>
+			<rect x="430" y="139.5" width="82" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="453.744873046875" y="146" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,292) scale(1,-1)">Museum</text>
+			<rect x="430" y="115.5" width="82" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="450.989501953125" y="122" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,244) scale(1,-1)">Landmark</text>
+			<rect x="430" y="91.5" width="82" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="461.747314453125" y="98" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,196) scale(1,-1)">Park</text>
+			<rect x="430" y="65.5" width="82" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="460.494873046875" y="72" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,144) scale(1,-1)">Hotel</text>
+			<rect x="430" y="39.5" width="82" height="19.0" rx="3" ry="3" style="stroke: rgb(19%,35%,45%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="458.244873046875" y="46" style="font-family: Arial, sans-serif; font-style: normal; font-size: 9px;fill: rgb(9%,13%,17%); stroke:none;" transform="translate(0,92) scale(1,-1)">Hostel</text>
+		</g>
+	</g>
+</svg>

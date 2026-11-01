@@ -2,9 +2,10 @@
 /instructions/*
 !/instructions/README.md
 
-# Final submission exports are prepared locally.
+# Final exports are local unless explicitly included below.
 /submission/*
 !/submission/.gitkeep
+!/submission/A1_ZandiyeVakili_12642780_Report.pdf
 
 # Protégé/editor backups; the actual ontology is tracked.
 *.bak
@@ -14,6 +15,7 @@
 *.swp
 *.swo
 *~
+~$*
 
 # OS and local settings
 .DS_Store
@@ -23,3 +25,6 @@
 .env
 .env.*
 !.env.example
+
+# Internal report render and validation intermediates
+/tmp/
