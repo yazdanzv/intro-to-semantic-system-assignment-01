@@ -1,0 +1,25 @@
+# Original course material is kept locally.
+/instructions/*
+!/instructions/README.md
+
+# Final submission exports are prepared locally.
+/submission/*
+!/submission/.gitkeep
+
+# Protégé/editor backups; the actual ontology is tracked.
+*.bak
+*.backup
+*.autosave
+*.owl.*
+*.swp
+*.swo
+*~
+
+# OS and local settings
+.DS_Store
+._*
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
